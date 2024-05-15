@@ -1,0 +1,49 @@
+@tailwind components;
+@tailwind utilities;
+.headerButtonContainer {
+  transform: scale(0);
+  position: fixed;
+  right: 0px;
+  z-index: 4;
+}
+.headerButtonContainer .button {
+  position: relative;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1C1D20;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerButtonContainer .burger {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.headerButtonContainer .burger::after, .headerButtonContainer .burger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+.headerButtonContainer .burger::after {
+  top: -5px;
+}
+.headerButtonContainer .burger::before {
+  top: 5px;
+}
+.headerButtonContainer .burgerActive::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+.headerButtonContainer .burgerActive::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}/*# sourceMappingURL=style.module.css.map */

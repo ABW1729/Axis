@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+html{
+    scroll-behavior: smooth;
+}
+.preserve-3d {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+.loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #25b09b;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: l27 1s infinite steps(8);
+  }
+  @keyframes l27 {
+    100% {transform: rotate(1turn)}
+  }
+  
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow-x: none;
+    background-color: #ffffff;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 12px;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+}
+.button-wrapper {
+    margin-right: 10px; /* Adjust the margin between buttons */
+  }
+
+  @media (min-width: 1320px) {
+    .button-wrapper {
+       margin-left: 67px;
+    }
+   }
+
+
+.back {
+      width: calc(50% - 5px); 
+    height: 50px;
+    float: left;
+    background-color:transparent;
+    border: 10px;
+    border-color: transparent;
+    border-style: solid;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    counter-increment: bc;
+    padding: 0px 5px 5px 5px;
+}
+
+.back:before {
+    content: counter(bc) "_";
+    position: absolute;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1260px) {
+    .back {
+        width: 75%;
+    }
+}
+
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 220%;
+    margin-top: -15px;
+    margin-left: -100px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+.b03_skewed_slide_in {
+    overflow: hidden;
+    border: whitesmoke solid 1px;
+}
+
+.b03_skewed_slide_in div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+}
+
+.b03_skewed_slide_in div:nth-child(1) {
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.b03_skewed_slide_in div:nth-child(2) {
+    background-color: white;
+    width: 230px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: translate(-250px, 0px) skewX(-30deg);
+    -webkit-transform: translate(-250px, 0px) skewX(-30deg);
+    -moz-transform: translate(-250px, 0px) skewX(-30deg);
+}
+
+.b03_skewed_slide_in div:nth-child(3) {
+    color: black;
+    left: -200px;
+    transition: left 0.2s ease;
+    -webkit-transition: left 0.2s ease;
+    -moz-transition: left 0.2s ease;
+}
+
+.b03_skewed_slide_in:hover div:nth-child(2) {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transform: translate(-15px, 0px) skewX(-30deg);
+    -webkit-transform: translate(-15px, 0px) skewX(-30deg);
+    -moz-transform: translate(-15px, 0px) skewX(-30deg);
+}
+
+.b03_skewed_slide_in:hover div:nth-child(3) {
+    left: 0px;
+    transition: left 0.30000000000000004s ease;
+    -webkit-transition: left 0.30000000000000004s ease;
+    -moz-transition: left 0.30000000000000004s ease;
+}
+@media (min-width: 1320px) {
+    .backgroundContainer {
+       background-size: cover;
+       background-repeat: no-repeat;
+       background: fixed;
+       width: 100%;
+    }
+   }
+  
+  @media (min-width: 1320px) {
+    .wrapper-container {
+       margin-left: 80px;
+       gap: 60px;
+    }
+    }
+  
+    
+  @media (min-width: 1320px) {
+  .container {
+     padding-right: 6rem;
+  }
+  }
+  
+  @media (min-width: 1320px) {
+  .wrapper {
+     padding-right: 2rem;
+  }
+  }
+  @media (min-width: 1320px) {
+  .date-conatiner {
+     padding-right: 42px;
+  }
+  }

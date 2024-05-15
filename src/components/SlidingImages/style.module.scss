@@ -1,0 +1,87 @@
+@tailwind components;
+@tailwind utilities;
+
+.slidingImages {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    position: relative;
+    margin-top: 50px; /* Adjust margin for smaller screens */
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .slidingImages {
+        margin-top: 100px; /* Adjust margin for smaller screens */
+    }
+}
+
+.slider {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap; /* Ensure slides stay in a single row */
+    gap: 3vw;
+    left: -10vw;
+    width: 140vw; /* Adjust width to fit the container */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 100%; /* Adjust width for smaller screens */
+        left: 0; /* Reset left position for smaller screens */
+        scroll-snap-type: x mandatory; /* Enable smooth horizontal scrolling for smaller screens */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    }
+}
+
+.project {
+    flex: 0 0 auto; /* Allow projects to shrink and grow */
+    width: 25%; /* Adjust width for smaller screens */
+    max-width: 600px; /* Set maximum width for better control */
+    height: 30vw; /* Adjust height for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 30%; /* Adjust width for smaller screens */
+    }
+}
+
+.imageContainer {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+.img{
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .imageContainer {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
+
+.circleContainer {
+    background-color: white;
+    position: relative;
+    margin-top: 100px;
+}
+
+.circle {
+    height: 1550%;
+    width: 120%;
+    left: -10%;
+    border-radius: 0 0 50% 50%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+}

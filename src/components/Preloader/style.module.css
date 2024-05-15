@@ -1,0 +1,12 @@
+@tailwind components;
+@tailwind utilities;
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background-color: #141516;
+}/*# sourceMappingURL=style.module.css.map */
