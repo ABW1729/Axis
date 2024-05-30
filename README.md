@@ -35,9 +35,9 @@ This project is code for event registration portal made as part of AXIS-24
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`GOOGLE_CLIENT_ID`=your_client_id
-`GOOGLE_CLIENT_SECRET`=your_client_secret
-`MAILUSER`=your_mail_username
+`GOOGLE_CLIENT_ID`=your_client_id  
+`GOOGLE_CLIENT_SECRET`=your_client_secret  
+`MAILUSER`=your_mail_username  
 `MAILPASS`=your_mail_password  
 
 
