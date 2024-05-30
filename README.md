@@ -23,7 +23,7 @@ This project is code for event registration portal made as part of AXIS-24
 ## Features
 
 - Event Registration and Management
-- User Authentication and          Authorization 
+- User Authentication and Authorization via Account Verification and Forgot Password Feature 
 - Responsive Design
 - Admin Console
 - User Dashboard to manage registered events and edit basic details
