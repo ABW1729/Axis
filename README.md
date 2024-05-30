@@ -15,7 +15,7 @@ This project is code for event registration portal made as part of AXIS-24
 
 ## Tech Stack
 
-**Client:** NextJs,TailwindCSS,MaterialUI,Sass
+**Client:** NextJs,TailwindCSS,MaterialUI,Sass,Framer-Motion,gsap
 
 **Server:** NodeJs
 
